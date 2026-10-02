@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Web Viewer</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+    <form id="setup" hidden>
+        <label for="url">Web page to show (https only)</label>
+        <input id="url" type="text" placeholder="https://example.com" autocomplete="off" spellcheck="false">
+        <p id="error" role="alert"></p>
+        <button type="submit">Show page</button>
+        <p class="hint">The link is saved in this presentation. Hover the page and click &#9881; to change it.</p>
+    </form>
+
+    <iframe id="frame" hidden allow="fullscreen; accelerometer; gyroscope; xr-spatial-tracking" allowfullscreen></iframe>
+    <button id="edit" type="button" title="Change link" hidden>&#9881;</button>
+
+    <script src="viewer.js"></script>
+</body>
+</html>

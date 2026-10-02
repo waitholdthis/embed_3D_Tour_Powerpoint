@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="ContentApp">
+  <Id>2f8a8adb-3968-4b6d-bf5f-5a883fc37e3e</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>waitholdthis</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Free Web Viewer" />
+  <Description DefaultValue="Show any https web page, such as a 360 tour, live inside a slide." />
+  <IconUrl DefaultValue="https://waitholdthis.github.io/embed_3D_Tour_Powerpoint/addin/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://waitholdthis.github.io/embed_3D_Tour_Powerpoint/addin/assets/icon-64.png" />
+  <SupportUrl DefaultValue="https://github.com/waitholdthis/embed_3D_Tour_Powerpoint" />
+  <AppDomains>
+    <AppDomain>https://waitholdthis.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Presentation" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://waitholdthis.github.io/embed_3D_Tour_Powerpoint/addin/viewer.html" />
+    <RequestedWidth>800</RequestedWidth>
+    <RequestedHeight>450</RequestedHeight>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <AllowSnapshot>true</AllowSnapshot>
+</OfficeApp>
