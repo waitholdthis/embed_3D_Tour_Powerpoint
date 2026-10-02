@@ -1,0 +1,20 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+#panorama-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* No focus ring when clicking/dragging inside the PowerPoint iframe */
+#panorama-container,
+#panorama-container *,
+#panorama-container:focus,
+#panorama-container *:focus {
+    outline: none;
+}
